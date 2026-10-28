@@ -57,7 +57,7 @@ Traditional terminal emulators have treated input and output as an unorganized s
 Warp is structured as a modular Rust workspace consisting of more than 80 decoupled crates:
 
 ```
-warp-clean/
+warp-lol/
 ├── app/                        # Main desktop application, macOS bundle packaging, platform glue
 │   ├── src/                    # Window bootstrap, session coordinator, event loop
 │   ├── assets/                 # Embedded fonts, themes, icons, and platform resources
@@ -201,3 +201,4 @@ We welcome contributions to bug fixes, performance enhancements, and new command
 ## License
 
 This project is licensed under the **GNU Affero General Public License v3.0** (`AGPL-3.0-only`). See [Cargo.toml](Cargo.toml) for package license metadata.
+
