@@ -1,0 +1,10 @@
+[package]
+name = "warp_pricing"
+authors = ["Warp Team <dev@warp.dev>"]
+edition = "2021"
+publish.workspace = true
+license.workspace = true
+
+[dependencies]
+warp_graphql.workspace = true
+warpui.workspace = true

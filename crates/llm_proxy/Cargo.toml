@@ -1,0 +1,31 @@
+[package]
+name = "llm_proxy"
+version = "0.1.0"
+edition = "2021"
+publish.workspace = true
+license.workspace = true
+
+# A local, OpenAI-compatible translation proxy that lets Warp drive
+# subscription/OAuth-based providers (ChatGPT/Codex, Gemini CLI, Claude Code,
+# GitHub Copilot, Qwen Code) through a single Chat Completions endpoint.
+#
+# Native-only: the proxy binds a localhost TCP port and holds OAuth tokens, so
+# it does not build for wasm.
+
+[dependencies]
+anyhow.workspace = true
+axum.workspace = true
+chrono.workspace = true
+log.workspace = true
+reqwest.workspace = true
+serde = { workspace = true, features = ["derive"] }
+serde_json.workspace = true
+thiserror.workspace = true
+tokio = { workspace = true, features = ["rt", "rt-multi-thread", "net", "sync", "time"] }
+tower-http = { workspace = true, features = ["cors"] }
+uuid.workspace = true
+rig-core = "0.7"
+futures = { workspace = true }
+
+[dev-dependencies]
+tokio = { workspace = true, features = ["macros", "rt-multi-thread"] }

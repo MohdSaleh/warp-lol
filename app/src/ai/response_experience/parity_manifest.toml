@@ -1,0 +1,171 @@
+[[feature]]
+id = "todo_progress"
+cloud_source = "UpdateTodos"
+local_source = "PlanEvent"
+canonical_event = "Plan"
+renderer = "todos"
+persistence = "durable"
+status = "supported"
+
+[[feature]]
+id = "child_agent_lifecycle"
+cloud_source = "Subagent/AgentEvent"
+local_source = "ChildAgentEvent"
+canonical_event = "ChildAgent"
+renderer = "orchestration"
+persistence = "durable"
+status = "blocked_by_runtime"
+reason = "Local child-agent runtime not yet enabled"
+
+[[feature]]
+id = "run_lifecycle"
+cloud_source = "RunEvent"
+local_source = "RunLifecycleEvent"
+canonical_event = "Run"
+renderer = "system"
+persistence = "durable"
+status = "supported"
+
+[[feature]]
+id = "status_update"
+cloud_source = "StatusEvent"
+local_source = "StatusEvent"
+canonical_event = "Status"
+renderer = "system"
+persistence = "ephemeral"
+status = "supported"
+
+[[feature]]
+id = "reasoning_summary"
+cloud_source = "ReasoningSummaryEvent"
+local_source = "ReasoningSummaryEvent"
+canonical_event = "ReasoningSummary"
+renderer = "content"
+persistence = "durable"
+status = "supported"
+
+[[feature]]
+id = "content_stream"
+cloud_source = "ContentEvent"
+local_source = "ContentEvent"
+canonical_event = "Content"
+renderer = "content"
+persistence = "durable"
+status = "supported"
+
+[[feature]]
+id = "tool_lifecycle"
+cloud_source = "ToolEvent"
+local_source = "ToolLifecycleEvent"
+canonical_event = "Tool"
+renderer = "content"
+persistence = "durable"
+status = "supported"
+
+[[feature]]
+id = "retrieval_event"
+cloud_source = "RetrievalEvent"
+local_source = "RetrievalEvent"
+canonical_event = "Retrieval"
+renderer = "system"
+persistence = "durable"
+status = "supported"
+
+[[feature]]
+id = "source_event"
+cloud_source = "SourceEvent"
+local_source = "SourceEvent"
+canonical_event = "Source"
+renderer = "system"
+persistence = "durable"
+status = "supported"
+
+[[feature]]
+id = "citation_event"
+cloud_source = "CitationEvent"
+local_source = "CitationEvent"
+canonical_event = "Citation"
+renderer = "content"
+persistence = "durable"
+status = "supported"
+
+[[feature]]
+id = "memory_event"
+cloud_source = "MemoryEvent"
+local_source = "MemoryEvent"
+canonical_event = "Memory"
+renderer = "system"
+persistence = "durable"
+status = "supported"
+
+[[feature]]
+id = "artifact_event"
+cloud_source = "ArtifactEvent"
+local_source = "ArtifactEvent"
+canonical_event = "Artifact"
+renderer = "content"
+persistence = "durable"
+status = "supported"
+
+[[feature]]
+id = "diff_event"
+cloud_source = "DiffEvent"
+local_source = "DiffEvent"
+canonical_event = "Diff"
+renderer = "content"
+persistence = "durable"
+status = "supported"
+
+[[feature]]
+id = "routing_event"
+cloud_source = "RoutingEvent"
+local_source = "RoutingEvent"
+canonical_event = "Routing"
+renderer = "system"
+persistence = "ephemeral"
+status = "supported"
+
+[[feature]]
+id = "context_event"
+cloud_source = "ContextEvent"
+local_source = "ContextEvent"
+canonical_event = "Context"
+renderer = "system"
+persistence = "ephemeral"
+status = "supported"
+
+[[feature]]
+id = "usage_event"
+cloud_source = "UsageEvent"
+local_source = "UsageEvent"
+canonical_event = "Usage"
+renderer = "system"
+persistence = "ephemeral"
+status = "supported"
+
+[[feature]]
+id = "suggestion_event"
+cloud_source = "SuggestionEvent"
+local_source = "SuggestionEvent"
+canonical_event = "Suggestion"
+renderer = "content"
+persistence = "ephemeral"
+status = "supported"
+
+[[feature]]
+id = "warning_event"
+cloud_source = "WarningEvent"
+local_source = "WarningEvent"
+canonical_event = "Warning"
+renderer = "system"
+persistence = "ephemeral"
+status = "supported"
+
+[[feature]]
+id = "terminal_event"
+cloud_source = "TerminalEvent"
+local_source = "TerminalEvent"
+canonical_event = "Terminal"
+renderer = "content"
+persistence = "durable"
+status = "supported"

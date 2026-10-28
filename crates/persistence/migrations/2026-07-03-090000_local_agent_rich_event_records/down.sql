@@ -1,0 +1,2 @@
+DROP TABLE local_agent_rich_event_records;
+DROP TABLE local_agent_rich_projection_records;
